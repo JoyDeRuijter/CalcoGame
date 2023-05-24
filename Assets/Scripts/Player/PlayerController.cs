@@ -7,6 +7,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     private bool isMoving;
     private Vector2 input;
+    private Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -19,6 +25,9 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
+                anim.SetFloat("moveX", input.x);
+                anim.SetFloat("moveY", input.y);
+
                 Vector2 targetPos = transform.position;
                 targetPos.x += input.x;
                 targetPos.y += input.y;
@@ -26,6 +35,8 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(Move(targetPos));
             }
         }
+
+        anim.SetBool("isMoving", isMoving);
     }
 
     IEnumerator Move(Vector3 _targetPos)
