@@ -28,9 +28,18 @@ public class Area : MonoBehaviour
         player = gameManager.Player;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //if (collision.gameObject.name == "player")
+        //    gameManager.currentArea = this;
+    }
+
     private void Update()
     {
-        if (polyCol.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
-            gameManager.currentArea = this;
+        //if (polyCol.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
+        //    gameManager.currentArea = this;
+
+        //if (polyCol.bounds.Contains(player.transform.position))
+        //    gameManager.currentArea = this;
     }
 }

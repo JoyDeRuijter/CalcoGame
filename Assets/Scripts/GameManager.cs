@@ -29,7 +29,13 @@ public class GameManager : MonoBehaviour
     // Later hide in inspector
     public Area currentArea;
 
+    [SerializeField] Area startArea;
     [SerializeField] TMP_Text areaText;
+
+    private void Start()
+    {
+        currentArea = startArea;
+    }
 
     private void Update()
     {
