@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
     private Animator anim;
+    private Area currentArea;
 
     private void Awake()
     {
@@ -62,4 +63,7 @@ public class PlayerController : MonoBehaviour
             return false;
         return true;
     }
+
+    public void UpdatePlayerArea(Area _area) => currentArea = _area;
+
 }

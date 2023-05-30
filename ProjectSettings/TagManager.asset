@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - CollisionTile
-  - 
+  - Player
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2662258767
+    locked: 0
+  - name: UI
+    uniqueID: 479549339
     locked: 0

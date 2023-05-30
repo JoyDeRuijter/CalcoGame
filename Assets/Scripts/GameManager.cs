@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -23,7 +24,15 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    //Player property
-    [SerializeField] private GameObject player;
-    public GameObject Player { get => player;}
+    public GameObject Player;
+
+    // Later hide in inspector
+    public Area currentArea;
+
+    [SerializeField] TMP_Text areaText;
+
+    private void Update()
+    {
+        areaText.text = currentArea.AreaName;
+    }
 }
