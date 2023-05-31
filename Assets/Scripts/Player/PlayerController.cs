@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
     [SerializeField] private LayerMask objectsSolidLayer;
+    [SerializeField] private LayerMask bushLayer;
+
     private bool isMoving;
     private Vector2 input;
     private Animator anim;
@@ -21,6 +23,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //IEnumerator that smoothly moves the player to the given targetposition
+    //Also checks for calco'er-encounters
     IEnumerator Move(Vector3 _targetPos)
     {
         isMoving = true;
@@ -33,6 +36,8 @@ public class PlayerController : MonoBehaviour
         transform.position = _targetPos;
 
         isMoving = false;
+
+        CheckForEncounters();
     }
 
     //Bool that returns true if the targetposition is walkable and false if it isn't
@@ -68,5 +73,17 @@ public class PlayerController : MonoBehaviour
             }
         }
         anim.SetBool("isMoving", isMoving);
+    }
+
+    //Checks
+    private void CheckForEncounters()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, bushLayer) != null) 
+        {
+            if (Random.Range(1, 101) <= 10)
+            {
+                Debug.Log("Encountered a wild Calco-employee!");
+            }
+        }
     }
 }

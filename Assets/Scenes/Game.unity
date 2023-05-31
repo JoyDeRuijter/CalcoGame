@@ -170,10 +170,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 22
   areaName: TRAINERS-ROOM
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &24840959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -247,10 +243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 5
   areaName: VOLKSBANK
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &80852206
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -324,10 +316,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 6
   areaName: STAIRS
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &83244980
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -401,10 +389,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 9
   areaName: FUJITSU
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &83932404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -648,10 +632,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 0
   areaName: CANTEEN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &264975222
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,10 +705,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 21
   areaName: SILENCE AREA
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &360735383
 GameObject:
   m_ObjectHideFlags: 0
@@ -27917,10 +27893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 4
   areaName: ING
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &615135877
 GameObject:
   m_ObjectHideFlags: 0
@@ -27968,10 +27940,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 12
   areaName: ABN AMRO
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &615135881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28071,10 +28039,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 0
   areaName: CANTEEN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &690549431
 GameObject:
   m_ObjectHideFlags: 0
@@ -28122,10 +28086,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 10
   areaName: THE JUNGLE
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &690549435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28225,10 +28185,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 0
   areaName: CANTEEN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &707922247
 GameObject:
   m_ObjectHideFlags: 0
@@ -28276,10 +28232,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 4
   areaName: ING
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &707922251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28353,10 +28305,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 15
   areaName: ELEVATOR
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &727255927
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28430,10 +28378,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 18
   areaName: SVB
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &735799003
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28507,10 +28451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 20
   areaName: STEDIN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &768420581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28610,10 +28550,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 10
   areaName: THE JUNGLE
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &922258873
 GameObject:
   m_ObjectHideFlags: 0
@@ -28661,10 +28597,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 25
   areaName: STAIRS
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &922258877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28721,9 +28653,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1456230274}
-  currentArea: {fileID: 0}
-  startArea: {fileID: 1752760205}
   areaText: {fileID: 491004263}
+  startArea: {fileID: 1752760205}
+  currentArea: {fileID: 0}
 --- !u!4 &923363036
 Transform:
   m_ObjectHideFlags: 0
@@ -28887,10 +28819,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 14
   areaName: HALLWAY
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1036679402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28964,10 +28892,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 17
   areaName: POST NL
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1040393234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29067,10 +28991,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 23
   areaName: SERVER-ROOM
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &1055717749
 GameObject:
   m_ObjectHideFlags: 0
@@ -29163,10 +29083,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 13
   areaName: INNOVATION-ROOM
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1140719417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29384,10 +29300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 23
   areaName: SERVER-ROOM
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1184048618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29461,10 +29373,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 11
   areaName: RABOBANK
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1196142580
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29690,10 +29598,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 21
   areaName: SILENCE AREA
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &1379581115
 GameObject:
   m_ObjectHideFlags: 0
@@ -29741,10 +29645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 1
   areaName: ACHMEA
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1379581120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29884,6 +29784,9 @@ MonoBehaviour:
   objectsSolidLayer:
     serializedVersion: 2
     m_Bits: 64
+  bushLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!212 &1456230276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33087,10 +32990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 10
   areaName: THE JUNGLE
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &1524811949
 GameObject:
   m_ObjectHideFlags: 0
@@ -36760,10 +36659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 2
   areaName: AHOLD
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1539651026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36913,10 +36808,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 0
   areaName: CANTEEN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1752760207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36990,10 +36881,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 7
   areaName: TOILET
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1789250845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37067,10 +36954,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 3
   areaName: STORAGE
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1857803297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37144,10 +37027,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 8
   areaName: NN
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1879820491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37247,10 +37126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 5
   areaName: VOLKSBANK
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!1 &1924044459
 GameObject:
   m_ObjectHideFlags: 0
@@ -37298,10 +37173,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 19
   areaName: ENECO
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1924044463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37375,10 +37246,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 24
   areaName: TOILET
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1933945167
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37452,10 +37319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 21
   areaName: SILENCE AREA
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &1939655212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37529,10 +37392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 16
   areaName: STORAGE
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &2052954897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55039,10 +54898,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   areaID: 15
   areaName: ELEVATOR
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
-  gameManager: {fileID: 923363035}
 --- !u!61 &2084589863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55083,7 +54938,7 @@ GameObject:
   - component: {fileID: 2094812715}
   - component: {fileID: 2094812714}
   - component: {fileID: 2094812713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55135,7 +54990,7 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
