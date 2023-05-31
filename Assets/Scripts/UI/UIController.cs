@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-    public void SwitchScene(string _sceneName)
-    {
-        SceneManager.LoadScene(_sceneName);
-    }
+    //Switches the current scene with the scene that matches the injected sceneName
+    public void SwitchScene(string _sceneName) => SceneManager.LoadScene(_sceneName);
 }

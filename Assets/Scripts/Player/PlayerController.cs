@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
     private Vector2 input;
     private Animator anim;
-    private Area currentArea;
 
     private void Awake()
     {
@@ -17,6 +16,36 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update()
+    {
+        HandleMovement();
+    }
+
+    //IEnumerator that smoothly moves the player to the given targetposition
+    IEnumerator Move(Vector3 _targetPos)
+    {
+        isMoving = true;
+
+        while ((_targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, _targetPos, moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+        transform.position = _targetPos;
+
+        isMoving = false;
+    }
+
+    //Bool that returns true if the targetposition is walkable and false if it isn't
+    private bool IsWalkable(Vector3 _targetPos)
+    {
+        Vector3 targetPos = new Vector3(_targetPos.x, _targetPos.y + 0.5f, _targetPos.z);
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, objectsSolidLayer) != null)
+            return false;
+        return true;
+    }
+
+    //Handles the playermovement by using the axis-input and checking if the player SHOULD and CAN move
+    private void HandleMovement()
     {
         if (!isMoving)
         {
@@ -34,36 +63,10 @@ public class PlayerController : MonoBehaviour
                 targetPos.x += input.x;
                 targetPos.y += input.y;
 
-                if(IsWalkable(targetPos))
+                if (IsWalkable(targetPos))
                     StartCoroutine(Move(targetPos));
             }
         }
-
         anim.SetBool("isMoving", isMoving);
     }
-
-    IEnumerator Move(Vector3 _targetPos)
-    {
-        isMoving = true;
-
-        while ((_targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, _targetPos, moveSpeed * Time.deltaTime);
-            yield return null;
-        }
-        transform.position = _targetPos;
-
-        isMoving = false;
-    }
-
-    private bool IsWalkable(Vector3 _targetPos)
-    {
-        Vector3 targetPos = new Vector3(_targetPos.x, _targetPos.y + 0.5f, _targetPos.z);
-        if (Physics2D.OverlapCircle(targetPos, 0.2f, objectsSolidLayer) != null)
-            return false;
-        return true;
-    }
-
-    public void UpdatePlayerArea(Area _area) => currentArea = _area;
-
 }

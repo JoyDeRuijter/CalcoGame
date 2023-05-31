@@ -10,11 +10,7 @@ public class Area : MonoBehaviour
     [SerializeField] private string areaName;
     public string AreaName { get => areaName;}
 
-    [SerializeField] private LayerMask playerLayerMask;
-    [SerializeField ]private GameManager gameManager;
-    //TODO make sure that not every area needs an objectreference to the gameManager through the inspector
-    //Temporary solution because of an unexplained nullreference
-
+    private GameManager gameManager;
     private BoxCollider2D boxCol;
     private GameObject player;
 
@@ -25,21 +21,20 @@ public class Area : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
         player = gameManager.Player;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //if (collision.gameObject.name == "player")
-        //    gameManager.currentArea = this;
     }
 
     private void Update()
     {
+        HandleIntersectionWithPlayer();
+    }
+
+    //Checks if the boxcollider of the player intersects with the bounds of the boxcollider of this area
+    //If it does, it calls the gameManagers function to handle the areatracking and injects itself
+    private void HandleIntersectionWithPlayer()
+    {
         if (boxCol.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
             gameManager.HandleAreaTracking(this);
-
-        //if (polyCol.bounds.Contains(player.transform.position))
-        //    gameManager.currentArea = this;
     }
 }

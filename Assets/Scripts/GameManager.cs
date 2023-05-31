@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            if (instance = null)
+            if (instance == null)
                 Debug.LogError("Gamemanager is NULL");
             return instance;
         }
@@ -24,30 +25,34 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    [Header("- PUBLIC REFERENCES -")]
     public GameObject Player;
 
-    // Later hide in inspector
-    public Area currentArea;
+    [Space(10)]
+    [Header("- PRIVATE REFERENCES -")]
+    [SerializeField] private TMP_Text areaText;
 
-    [SerializeField] Area startArea;
-    [SerializeField] TMP_Text areaText;
+    [Space(10)]
+    [Header("- EDITABLE SETTINGS -")]
+    [SerializeField] private Area startArea;
+
+    [Space(10)]
+    [Header("- READONLY ATTRIBUTES - ")]
+    [ReadOnlyAttribute, SerializeField] private Area currentArea;
 
     private void Start()
     {
         currentArea = startArea;
     }
 
-    private void Update()
-    {
-        areaText.text = currentArea.AreaName;
-    }
-
+    // Is called from the Area class when an area intersects with the player and then injects itself as parameter
+    // Sets the currentArea and updates the areaText
     public void HandleAreaTracking(Area _area)
     {
         if (currentArea != _area)
-        {
-            Debug.Log(_area.AreaName + " intersects with player");
+        { 
             currentArea = _area;
+            areaText.text = currentArea.AreaName;
         }
     }
 }
