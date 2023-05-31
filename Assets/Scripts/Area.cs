@@ -15,12 +15,12 @@ public class Area : MonoBehaviour
     //TODO make sure that not every area needs an objectreference to the gameManager through the inspector
     //Temporary solution because of an unexplained nullreference
 
-    private PolygonCollider2D polyCol;
+    private BoxCollider2D boxCol;
     private GameObject player;
 
     private void Awake()
     {
-        polyCol = GetComponent<PolygonCollider2D>();
+        boxCol = GetComponent<BoxCollider2D>();
     }
 
     private void Start()
@@ -36,8 +36,8 @@ public class Area : MonoBehaviour
 
     private void Update()
     {
-        //if (polyCol.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
-        //    gameManager.currentArea = this;
+        if (boxCol.bounds.Intersects(player.GetComponent<BoxCollider2D>().bounds))
+            gameManager.HandleAreaTracking(this);
 
         //if (polyCol.bounds.Contains(player.transform.position))
         //    gameManager.currentArea = this;

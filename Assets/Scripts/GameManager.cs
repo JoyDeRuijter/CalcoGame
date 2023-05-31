@@ -41,4 +41,13 @@ public class GameManager : MonoBehaviour
     {
         areaText.text = currentArea.AreaName;
     }
+
+    public void HandleAreaTracking(Area _area)
+    {
+        if (currentArea != _area)
+        {
+            Debug.Log(_area.AreaName + " intersects with player");
+            currentArea = _area;
+        }
+    }
 }
