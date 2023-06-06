@@ -5,14 +5,14 @@ using UnityEngine;
 public class Area : MonoBehaviour
 {
     [SerializeField] private int areaID;
-    public int AreaID { get => areaID; }
-
     [SerializeField] private string areaName;
-    public string AreaName { get => areaName;}
 
     private GameManager gameManager;
     private BoxCollider2D boxCol;
     private GameObject player;
+
+    public int AreaID { get => areaID; }
+    public string AreaName { get => areaName; }
 
     private void Awake()
     {

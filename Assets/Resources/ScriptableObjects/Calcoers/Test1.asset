@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868546bea72d8bf4088eb5132f9a0e5a, type: 3}
   m_Name: Test1
   m_EditorClassIdentifier: 
-  name: Test
+  name: Test1
   description: -> insert funny description here <-
   type1: 3
   type2: 1

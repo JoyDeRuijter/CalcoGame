@@ -54,19 +54,19 @@ public class CalcoerBase : ScriptableObject
 //Directie, Finance, HR, IT, Legal, Loopbaanbegeleiding, Marketing, Onderwijs, Recruitment, Sales, Secretarieel
 public enum CalcoerType
 { 
-    None,
-    Coaching,
-    HardSkillEducation,
-    SoftSkillEducation,
-    Finance,
+    NONE,
+    COACHING,
+    HARDSKILL_EDUCATION,
+    SOFTSKILL_EDUCATION,
+    FINANCE,
     HR,
     IT,
-    Legal,
-    Management,
-    Marketing,
-    Recruitment,
-    Sales,
-    Secretarial
+    LEGAL,
+    MANAGEMENT,
+    MARKETING,
+    RECRUITMENT,
+    SALES,
+    SECRETARIAL
 }
 
 public enum CalcoerDISC
