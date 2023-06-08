@@ -7,7 +7,7 @@ public class CalcoerBase : ScriptableObject
 {
     [Header("- NAME & DESCRIPTION -")]
     [SerializeField] new string name;
-    [TextArea] [SerializeField] string description;
+    [TextArea][SerializeField] string description;
 
     [Space(10)]
     [Header("- TYPE(S) & DISC & RARITY -")]
@@ -24,6 +24,10 @@ public class CalcoerBase : ScriptableObject
     [SerializeField] int spAttack;
     [SerializeField] int spDefense;
     [SerializeField] int speed;
+
+    [Space(10)]
+    [Header("- LEARNABLE MOVES -")]
+    [SerializeField] private List<LearnableMove> learnableMoves;
 
     [Space(10)]
     [Header("- VISUALS -")]
@@ -44,8 +48,22 @@ public class CalcoerBase : ScriptableObject
     public int SpAttack { get => spAttack;}
     public int SpDefense { get => spDefense;}
     public int Speed { get => speed;}
+    public List<LearnableMove> LearnableMoves { get => learnableMoves; }
+    public Sprite Icon { get => icon; }
+    public Sprite FrontSprite { get => frontSprite;}
+    public Sprite BackSprite { get => backSprite;}
 
     #endregion
+}
+
+[System.Serializable]
+public class LearnableMove
+{
+    [SerializeField] private MoveBase moveBase;
+    [SerializeField] int level;
+
+    public MoveBase MoveBase { get => moveBase;}
+    public int Level { get => level;}
 }
 
 //IDEA what if the types are just the DISC types???

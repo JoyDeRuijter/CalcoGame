@@ -24,6 +24,15 @@ MonoBehaviour:
   spAttack: 60
   spDefense: 70
   speed: 50
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: f3ba219b389cdb54d802df57159f6a9b, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 506b8d2a32a17d741b2c62c52d7bdd74, type: 2}
+    level: 5
+  - moveBase: {fileID: 11400000, guid: f762c6e0f4e6e214f9f1683886ca5268, type: 2}
+    level: 6
+  - moveBase: {fileID: 11400000, guid: 421f6e899a9877b449be40daa456b7cf, type: 2}
+    level: 12
   icon: {fileID: 21300000, guid: 3181fa186decb984494861009435bdbb, type: 3}
   frontSprite: {fileID: 21300000, guid: 9b609382db2016e4b845b9dad85bc601, type: 3}
   backSprite: {fileID: 21300000, guid: 736afbcdd12a17f45a24ca93e4127fe4, type: 3}
